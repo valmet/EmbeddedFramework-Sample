@@ -10,11 +10,13 @@
 #import <CocoaLumberjack/CocoaLumberjack.h>
 #import <Logger/Logger.h>
 #import <Logger/Logger-Swift.h>
+#import <Core/Core-Swift.h>
 
 @interface ViewController ()
 
 @property (nonatomic) LoggerSample *logger;
 @property (nonatomic) LoggerSample2 *logger2;
+@property (nonatomic) CoreSample *core;
 
 @end
 
@@ -27,13 +29,11 @@
     
     self.logger = [LoggerSample new];
     self.logger2 = [LoggerSample2 new];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-
-    [self.logger log:@"******1"];
-    [self.logger2 log2WithMessage:@"******2"];
+    self.core = [CoreSample new];
+    
+    [self.logger log:@"LoggerSample"];
+    [self.logger2 log];
+    [self.core log];
 }
 
 /*

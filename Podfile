@@ -25,4 +25,8 @@ target 'EmbeddedFramework' do
     common
   end
 
+  target 'Core' do
+    common
+  end
+
 end

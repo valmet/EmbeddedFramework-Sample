@@ -10,7 +10,7 @@ import Foundation
 
 @objcMembers
 public class LoggerSample2: NSObject {
-    public func log2(message: String) {
-        print("\(message)")
+    public func log() {
+        print("LogSample2")
     }
 }
