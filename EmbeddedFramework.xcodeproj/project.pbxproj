@@ -22,6 +22,8 @@
 		9D3C04E924AE22690004A27E /* Logger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3C04D924AE22690004A27E /* Logger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D3C04EC24AE22690004A27E /* Logger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3C04D724AE22690004A27E /* Logger.framework */; };
 		9D3C04ED24AE22690004A27E /* Logger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3C04D724AE22690004A27E /* Logger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9D3C04F824AE22AD0004A27E /* LoggerSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C04F624AE22A90004A27E /* LoggerSample.m */; };
+		9D3C04F924AE22B30004A27E /* LoggerSample.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3C04F524AE22A90004A27E /* LoggerSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A630F92073580EC2F20FE711 /* Pods_EmbeddedFramework_EmbeddedFrameworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E28A65F36FAA927F976DA46 /* Pods_EmbeddedFramework_EmbeddedFrameworkUITests.framework */; };
 		C54618A542196607B82C5A21 /* Pods_EmbeddedFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB496F530C0F4448238EBFB /* Pods_EmbeddedFramework.framework */; };
 /* End PBXBuildFile section */
@@ -110,6 +112,8 @@
 		9D3C04DF24AE22690004A27E /* LoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3C04E624AE22690004A27E /* LoggerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoggerTests.m; sourceTree = "<group>"; };
 		9D3C04E824AE22690004A27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D3C04F524AE22A90004A27E /* LoggerSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoggerSample.h; sourceTree = "<group>"; };
+		9D3C04F624AE22A90004A27E /* LoggerSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoggerSample.m; sourceTree = "<group>"; };
 		B55EAEAC80D9A45B0B55292C /* Pods-EmbeddedFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmbeddedFrameworkTests.release.xcconfig"; path = "Target Support Files/Pods-EmbeddedFrameworkTests/Pods-EmbeddedFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
 		FDB496F530C0F4448238EBFB /* Pods_EmbeddedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmbeddedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -246,6 +250,8 @@
 		9D3C04D824AE22690004A27E /* Logger */ = {
 			isa = PBXGroup;
 			children = (
+				9D3C04F524AE22A90004A27E /* LoggerSample.h */,
+				9D3C04F624AE22A90004A27E /* LoggerSample.m */,
 				9D3C04D924AE22690004A27E /* Logger.h */,
 				9D3C04DA24AE22690004A27E /* Info.plist */,
 			);
@@ -268,6 +274,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D3C04F924AE22B30004A27E /* LoggerSample.h in Headers */,
 				9D3C04E924AE22690004A27E /* Logger.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,6 +606,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D3C04F824AE22AD0004A27E /* LoggerSample.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
