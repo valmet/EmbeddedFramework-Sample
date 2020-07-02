@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LoggerSample : NSObject
 
+- (void)log:(NSString *)message;
+
 @end
 
 NS_ASSUME_NONNULL_END

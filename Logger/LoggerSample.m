@@ -7,7 +7,12 @@
 //
 
 #import "LoggerSample.h"
+#import <Logger/Logger-Swift.h>
 
 @implementation LoggerSample
+
+- (void)log:(NSString *)message {
+    NSLog(@"%@", message);
+}
 
 @end
