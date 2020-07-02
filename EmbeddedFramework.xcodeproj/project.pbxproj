@@ -3,20 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0C889BB35DD90953B0D1F5F9 /* Pods_EmbeddedFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DBC6ED8BA21948734FD855E /* Pods_EmbeddedFrameworkTests.framework */; };
 		9D35F95624AE1E8400ED3B79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D35F95524AE1E8400ED3B79 /* AppDelegate.m */; };
 		9D35F95924AE1E8400ED3B79 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D35F95824AE1E8400ED3B79 /* SceneDelegate.m */; };
-		9D35F95C24AE1E8400ED3B79 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D35F95B24AE1E8400ED3B79 /* ViewController.m */; };
 		9D35F95F24AE1E8400ED3B79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D35F95D24AE1E8400ED3B79 /* Main.storyboard */; };
 		9D35F96124AE1E8500ED3B79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D35F96024AE1E8500ED3B79 /* Assets.xcassets */; };
 		9D35F96424AE1E8500ED3B79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D35F96224AE1E8500ED3B79 /* LaunchScreen.storyboard */; };
 		9D35F96724AE1E8500ED3B79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D35F96624AE1E8500ED3B79 /* main.m */; };
 		9D35F97124AE1E8600ED3B79 /* EmbeddedFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D35F97024AE1E8600ED3B79 /* EmbeddedFrameworkTests.m */; };
 		9D35F97C24AE1E8600ED3B79 /* EmbeddedFrameworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D35F97B24AE1E8600ED3B79 /* EmbeddedFrameworkUITests.m */; };
+		9D3C04D024AE20880004A27E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C04CF24AE20880004A27E /* ViewController.m */; };
 		A630F92073580EC2F20FE711 /* Pods_EmbeddedFramework_EmbeddedFrameworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E28A65F36FAA927F976DA46 /* Pods_EmbeddedFramework_EmbeddedFrameworkUITests.framework */; };
 		C54618A542196607B82C5A21 /* Pods_EmbeddedFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB496F530C0F4448238EBFB /* Pods_EmbeddedFramework.framework */; };
 /* End PBXBuildFile section */
@@ -51,8 +51,6 @@
 		9D35F95524AE1E8400ED3B79 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9D35F95724AE1E8400ED3B79 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		9D35F95824AE1E8400ED3B79 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		9D35F95A24AE1E8400ED3B79 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9D35F95B24AE1E8400ED3B79 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9D35F95E24AE1E8400ED3B79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D35F96024AE1E8500ED3B79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D35F96324AE1E8500ED3B79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,6 +62,8 @@
 		9D35F97724AE1E8600ED3B79 /* EmbeddedFrameworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmbeddedFrameworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D35F97B24AE1E8600ED3B79 /* EmbeddedFrameworkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmbeddedFrameworkUITests.m; sourceTree = "<group>"; };
 		9D35F97D24AE1E8600ED3B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D3C04CE24AE20880004A27E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9D3C04CF24AE20880004A27E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B55EAEAC80D9A45B0B55292C /* Pods-EmbeddedFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmbeddedFrameworkTests.release.xcconfig"; path = "Target Support Files/Pods-EmbeddedFrameworkTests/Pods-EmbeddedFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
 		FDB496F530C0F4448238EBFB /* Pods_EmbeddedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmbeddedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,7 +116,6 @@
 				4F5EC26BF7CAFE6BC3BE1CC7 /* Pods-EmbeddedFrameworkTests.debug.xcconfig */,
 				B55EAEAC80D9A45B0B55292C /* Pods-EmbeddedFrameworkTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -149,8 +148,8 @@
 				9D35F95524AE1E8400ED3B79 /* AppDelegate.m */,
 				9D35F95724AE1E8400ED3B79 /* SceneDelegate.h */,
 				9D35F95824AE1E8400ED3B79 /* SceneDelegate.m */,
-				9D35F95A24AE1E8400ED3B79 /* ViewController.h */,
-				9D35F95B24AE1E8400ED3B79 /* ViewController.m */,
+				9D3C04CE24AE20880004A27E /* ViewController.h */,
+				9D3C04CF24AE20880004A27E /* ViewController.m */,
 				9D35F95D24AE1E8400ED3B79 /* Main.storyboard */,
 				9D35F96024AE1E8500ED3B79 /* Assets.xcassets */,
 				9D35F96224AE1E8500ED3B79 /* LaunchScreen.storyboard */,
@@ -416,9 +415,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D35F95C24AE1E8400ED3B79 /* ViewController.m in Sources */,
 				9D35F95624AE1E8400ED3B79 /* AppDelegate.m in Sources */,
 				9D35F96724AE1E8500ED3B79 /* main.m in Sources */,
+				9D3C04D024AE20880004A27E /* ViewController.m in Sources */,
 				9D35F95924AE1E8400ED3B79 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
