@@ -17,6 +17,11 @@
 		9D35F97124AE1E8600ED3B79 /* EmbeddedFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D35F97024AE1E8600ED3B79 /* EmbeddedFrameworkTests.m */; };
 		9D35F97C24AE1E8600ED3B79 /* EmbeddedFrameworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D35F97B24AE1E8600ED3B79 /* EmbeddedFrameworkUITests.m */; };
 		9D3C04D024AE20880004A27E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C04CF24AE20880004A27E /* ViewController.m */; };
+		9D3C04E024AE22690004A27E /* Logger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3C04D724AE22690004A27E /* Logger.framework */; };
+		9D3C04E724AE22690004A27E /* LoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C04E624AE22690004A27E /* LoggerTests.m */; };
+		9D3C04E924AE22690004A27E /* Logger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3C04D924AE22690004A27E /* Logger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3C04EC24AE22690004A27E /* Logger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3C04D724AE22690004A27E /* Logger.framework */; };
+		9D3C04ED24AE22690004A27E /* Logger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3C04D724AE22690004A27E /* Logger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A630F92073580EC2F20FE711 /* Pods_EmbeddedFramework_EmbeddedFrameworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E28A65F36FAA927F976DA46 /* Pods_EmbeddedFramework_EmbeddedFrameworkUITests.framework */; };
 		C54618A542196607B82C5A21 /* Pods_EmbeddedFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB496F530C0F4448238EBFB /* Pods_EmbeddedFramework.framework */; };
 /* End PBXBuildFile section */
@@ -36,7 +41,42 @@
 			remoteGlobalIDString = 9D35F95024AE1E8400ED3B79;
 			remoteInfo = EmbeddedFramework;
 		};
+		9D3C04E124AE22690004A27E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D35F94924AE1E8400ED3B79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D3C04D624AE22690004A27E;
+			remoteInfo = Logger;
+		};
+		9D3C04E324AE22690004A27E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D35F94924AE1E8400ED3B79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D35F95024AE1E8400ED3B79;
+			remoteInfo = EmbeddedFramework;
+		};
+		9D3C04EA24AE22690004A27E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D35F94924AE1E8400ED3B79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D3C04D624AE22690004A27E;
+			remoteInfo = Logger;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D3C04F124AE22690004A27E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9D3C04ED24AE22690004A27E /* Logger.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0ADD148AD53F8B1C904DA2FA /* Pods-EmbeddedFramework-EmbeddedFrameworkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmbeddedFramework-EmbeddedFrameworkUITests.release.xcconfig"; path = "Target Support Files/Pods-EmbeddedFramework-EmbeddedFrameworkUITests/Pods-EmbeddedFramework-EmbeddedFrameworkUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -64,6 +104,12 @@
 		9D35F97D24AE1E8600ED3B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D3C04CE24AE20880004A27E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9D3C04CF24AE20880004A27E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9D3C04D724AE22690004A27E /* Logger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Logger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D3C04D924AE22690004A27E /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		9D3C04DA24AE22690004A27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D3C04DF24AE22690004A27E /* LoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D3C04E624AE22690004A27E /* LoggerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoggerTests.m; sourceTree = "<group>"; };
+		9D3C04E824AE22690004A27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B55EAEAC80D9A45B0B55292C /* Pods-EmbeddedFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmbeddedFrameworkTests.release.xcconfig"; path = "Target Support Files/Pods-EmbeddedFrameworkTests/Pods-EmbeddedFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
 		FDB496F530C0F4448238EBFB /* Pods_EmbeddedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmbeddedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D3C04EC24AE22690004A27E /* Logger.framework in Frameworks */,
 				C54618A542196607B82C5A21 /* Pods_EmbeddedFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +137,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				A630F92073580EC2F20FE711 /* Pods_EmbeddedFramework_EmbeddedFrameworkUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D3C04D424AE22690004A27E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D3C04DC24AE22690004A27E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D3C04E024AE22690004A27E /* Logger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +187,8 @@
 				9D35F95324AE1E8400ED3B79 /* EmbeddedFramework */,
 				9D35F96F24AE1E8600ED3B79 /* EmbeddedFrameworkTests */,
 				9D35F97A24AE1E8600ED3B79 /* EmbeddedFrameworkUITests */,
+				9D3C04D824AE22690004A27E /* Logger */,
+				9D3C04E524AE22690004A27E /* LoggerTests */,
 				9D35F95224AE1E8400ED3B79 /* Products */,
 				72FA59AC44358DF9637DC6F0 /* Pods */,
 				451BFF4A4A005780C6A64C81 /* Frameworks */,
@@ -137,6 +201,8 @@
 				9D35F95124AE1E8400ED3B79 /* EmbeddedFramework.app */,
 				9D35F96C24AE1E8600ED3B79 /* EmbeddedFrameworkTests.xctest */,
 				9D35F97724AE1E8600ED3B79 /* EmbeddedFrameworkUITests.xctest */,
+				9D3C04D724AE22690004A27E /* Logger.framework */,
+				9D3C04DF24AE22690004A27E /* LoggerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,7 +243,36 @@
 			path = EmbeddedFrameworkUITests;
 			sourceTree = "<group>";
 		};
+		9D3C04D824AE22690004A27E /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				9D3C04D924AE22690004A27E /* Logger.h */,
+				9D3C04DA24AE22690004A27E /* Info.plist */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		9D3C04E524AE22690004A27E /* LoggerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D3C04E624AE22690004A27E /* LoggerTests.m */,
+				9D3C04E824AE22690004A27E /* Info.plist */,
+			);
+			path = LoggerTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9D3C04D224AE22690004A27E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D3C04E924AE22690004A27E /* Logger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		9D35F95024AE1E8400ED3B79 /* EmbeddedFramework */ = {
@@ -189,10 +284,12 @@
 				9D35F94E24AE1E8400ED3B79 /* Frameworks */,
 				9D35F94F24AE1E8400ED3B79 /* Resources */,
 				1A5F0A6FADF5AB2BFD95844A /* [CP] Embed Pods Frameworks */,
+				9D3C04F124AE22690004A27E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9D3C04EB24AE22690004A27E /* PBXTargetDependency */,
 			);
 			name = EmbeddedFramework;
 			productName = EmbeddedFramework;
@@ -238,6 +335,43 @@
 			productReference = 9D35F97724AE1E8600ED3B79 /* EmbeddedFrameworkUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		9D3C04D624AE22690004A27E /* Logger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D3C04EE24AE22690004A27E /* Build configuration list for PBXNativeTarget "Logger" */;
+			buildPhases = (
+				9D3C04D224AE22690004A27E /* Headers */,
+				9D3C04D324AE22690004A27E /* Sources */,
+				9D3C04D424AE22690004A27E /* Frameworks */,
+				9D3C04D524AE22690004A27E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Logger;
+			productName = Logger;
+			productReference = 9D3C04D724AE22690004A27E /* Logger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9D3C04DE24AE22690004A27E /* LoggerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D3C04F224AE22690004A27E /* Build configuration list for PBXNativeTarget "LoggerTests" */;
+			buildPhases = (
+				9D3C04DB24AE22690004A27E /* Sources */,
+				9D3C04DC24AE22690004A27E /* Frameworks */,
+				9D3C04DD24AE22690004A27E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D3C04E224AE22690004A27E /* PBXTargetDependency */,
+				9D3C04E424AE22690004A27E /* PBXTargetDependency */,
+			);
+			name = LoggerTests;
+			productName = LoggerTests;
+			productReference = 9D3C04DF24AE22690004A27E /* LoggerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -255,6 +389,13 @@
 						TestTargetID = 9D35F95024AE1E8400ED3B79;
 					};
 					9D35F97624AE1E8600ED3B79 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 9D35F95024AE1E8400ED3B79;
+					};
+					9D3C04D624AE22690004A27E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					9D3C04DE24AE22690004A27E = {
 						CreatedOnToolsVersion = 11.4.1;
 						TestTargetID = 9D35F95024AE1E8400ED3B79;
 					};
@@ -276,6 +417,8 @@
 				9D35F95024AE1E8400ED3B79 /* EmbeddedFramework */,
 				9D35F96B24AE1E8600ED3B79 /* EmbeddedFrameworkTests */,
 				9D35F97624AE1E8600ED3B79 /* EmbeddedFrameworkUITests */,
+				9D3C04D624AE22690004A27E /* Logger */,
+				9D3C04DE24AE22690004A27E /* LoggerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -299,6 +442,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9D35F97524AE1E8600ED3B79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D3C04D524AE22690004A27E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D3C04DD24AE22690004A27E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -438,6 +595,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D3C04D324AE22690004A27E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D3C04DB24AE22690004A27E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D3C04E724AE22690004A27E /* LoggerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -450,6 +622,21 @@
 			isa = PBXTargetDependency;
 			target = 9D35F95024AE1E8400ED3B79 /* EmbeddedFramework */;
 			targetProxy = 9D35F97824AE1E8600ED3B79 /* PBXContainerItemProxy */;
+		};
+		9D3C04E224AE22690004A27E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D3C04D624AE22690004A27E /* Logger */;
+			targetProxy = 9D3C04E124AE22690004A27E /* PBXContainerItemProxy */;
+		};
+		9D3C04E424AE22690004A27E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D35F95024AE1E8400ED3B79 /* EmbeddedFramework */;
+			targetProxy = 9D3C04E324AE22690004A27E /* PBXContainerItemProxy */;
+		};
+		9D3C04EB24AE22690004A27E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D3C04D624AE22690004A27E /* Logger */;
+			targetProxy = 9D3C04EA24AE22690004A27E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -699,6 +886,94 @@
 			};
 			name = Release;
 		};
+		9D3C04EF24AE22690004A27E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y7SY9GK7D2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Logger/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = valmet.Logger;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9D3C04F024AE22690004A27E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y7SY9GK7D2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Logger/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = valmet.Logger;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9D3C04F324AE22690004A27E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7SY9GK7D2;
+				INFOPLIST_FILE = LoggerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = valmet.LoggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmbeddedFramework.app/EmbeddedFramework";
+			};
+			name = Debug;
+		};
+		9D3C04F424AE22690004A27E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7SY9GK7D2;
+				INFOPLIST_FILE = LoggerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = valmet.LoggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmbeddedFramework.app/EmbeddedFramework";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -734,6 +1009,24 @@
 			buildConfigurations = (
 				9D35F98724AE1E8600ED3B79 /* Debug */,
 				9D35F98824AE1E8600ED3B79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D3C04EE24AE22690004A27E /* Build configuration list for PBXNativeTarget "Logger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D3C04EF24AE22690004A27E /* Debug */,
+				9D3C04F024AE22690004A27E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D3C04F224AE22690004A27E /* Build configuration list for PBXNativeTarget "LoggerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D3C04F324AE22690004A27E /* Debug */,
+				9D3C04F424AE22690004A27E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
