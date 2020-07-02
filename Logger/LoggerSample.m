@@ -8,10 +8,12 @@
 
 #import "LoggerSample.h"
 #import <Logger/Logger-Swift.h>
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 @implementation LoggerSample
 
 - (void)log:(NSString *)message {
+    [DDLog addLogger:[DDOSLogger sharedInstance]];
     NSLog(@"%@", message);
 }
 

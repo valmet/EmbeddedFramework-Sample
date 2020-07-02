@@ -4,9 +4,13 @@
 target 'EmbeddedFramework' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  
+  def common
+    pod 'CocoaLumberjack'
+  end
 
   # Pods for EmbeddedFramework
-  pod 'CocoaLumberjack'
+  common
 
   target 'EmbeddedFrameworkTests' do
     inherit! :search_paths
@@ -15,6 +19,10 @@ target 'EmbeddedFramework' do
 
   target 'EmbeddedFrameworkUITests' do
     # Pods for testing
+  end
+
+  target 'Logger' do
+    common
   end
 
 end
